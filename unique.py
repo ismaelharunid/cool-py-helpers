@@ -1,3 +1,9 @@
+# Copyright 2020 by Ismael Harun.
+# This script is licensed under the GPL3.  Please obtain a copy if you do not
+# have one.  It shoud have been included with the download or cloning.
+# This file is part of the cool-py-helpers github repository.
+
+
 from collections import Sequence, Mapping
 
 def uniques(*seqs, **kwargs):
