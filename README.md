@@ -1,4 +1,4 @@
-# cool-py-helpers
+# cool_py_helpers
 A collection of common support functions, things and examples.
 
 
