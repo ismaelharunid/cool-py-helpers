@@ -31,10 +31,15 @@ prints
 
 prints
 
-(1, 2, 3, 4, 5)
-{'a': 1, 'b': 2, 'c': 3}
+        (1, 2, 3, 4, 5)
+        {'a': 1, 'b': 2, 'c': 3}
 
 
 ## installation?
 
 The usual download or clone.  Just make sure it's in your PATH.
+
+## documentation?
+
+it's in the code.
+
