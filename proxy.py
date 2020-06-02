@@ -25,6 +25,26 @@ def defattr(cls, attr_name):
 
 def proxy(obj, attr_names=None, exclude_attr_names=DEFAULT_EXCLUDE_NAMES \
     , proxy_name=None, mixins={}):
+  """ 
+  Create a Proxy class or a object proxy.
+  
+  Creates either a Proxy class or a object proxy depending on whether the first
+  first argument is a type/class or an instance object.  All but the first 
+  argument are optional.
+  Note that proxying some attributes will create infinite recursion, which I am
+  sure you're not interested in, so it's best to either use it without speicific
+  attribute names or be selective with which attributes you really want to proxy.
+  
+  Parameters: 
+    obj (object or type): the subject or type to proxy, 
+    attr_names (Sequence): a Sequence attribute names you want proxied.
+    exclude_attr_names (Sequence): a Sequence attribute names you do not want proxied.
+    proxy_name (str): the name of the proxy class to generate.
+    mixins (dict): non proxy methods or attributes to add in.
+    subject (any): Not yet implemented.
+  Returns: 
+    object: the proxy object or type.
+  """
   cls = obj if isinstance(obj, type) else obj.__class__
   if attr_names is None: attr_names = dir(obj)
   if mixins:
