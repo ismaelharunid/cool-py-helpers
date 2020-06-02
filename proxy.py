@@ -1,3 +1,7 @@
+# Copyright 2020 by Ismael Harun.
+# This script is licensed under the GPL3.  Please obtain a copy if you do not
+# have one.  It shoud have been included with the download or cloning.
+# This file is part of the cool-py-helpers github repository.
 
 ALWAYS_EXCLUDE_NAMES = ('__class__', '__name__', '__doc__', '__new__' \
     , '__init__', '__getattribute__', '__subclasshook__', '__abstractmethods__' \
